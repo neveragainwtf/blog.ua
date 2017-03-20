@@ -1,0 +1,1 @@
+// $('.banner').parallax({imageSrc: '1.jpg'});

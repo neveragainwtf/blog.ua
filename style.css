@@ -1,0 +1,168 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ededed;
+}
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+}
+#footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background: #d2d2d2;
+}
+
+
+#footer img {
+	width:40px;
+	height:40px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d2d2d2;
+    top: 0; 
+    width: 100%; 
+	
+}
+
+li {
+    float: left;
+	height: 100px;
+  	display: flex;
+  	align-items: center;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 16px;
+    text-decoration: none;
+	float:left;
+	height: 100px;
+    font-size: 25px;
+    font-family: cursive;
+    padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+li a:hover {
+ background: #8c95a3;
+ color: white;
+ position: flex;
+}
+.banner, img {
+	width:100%;
+}
+
+#social, img{ 
+	float: left;
+	padding: 5px 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#social {
+	margin-left: 10px;
+}
+#description {
+	text-align: center;
+ 	margin: 90px 0 100px 0;
+}
+
+.dropdown-content{
+ position: absolute;
+ background-color: #d2d2d2;
+ top:100px;
+ width: 324px;
+}
+
+form{
+	display: table;
+	margin:auto;
+	padding: 40px;
+}
+input,label{
+	display: inline-block;
+	font-family: cursive;
+	vertical-align: middle;
+	margin-bottom:5px; 
+	font-size: 20px;
+}
+input{
+	width: 240px;
+	height: 30px;
+}
+button{
+	font-family: cursive;
+	width:55px;
+	height:30px;
+	background-color:#d2d2d2;
+	border: 1px solid black; 
+}
+button:hover{
+	background-color:#8c95a3;
+}
+
+#navigation {
+	display: table;
+	margin:auto;
+	padding: 50px;
+}
+
+#label{
+	text-align: center;
+	font-size: 20px;
+	font-family: cursive;
+	margin-bottom: 25px;
+}
+.navEl{
+	display: inline-block;
+	text-align: center;
+	padding: 0 25px;
+	transition: 0.5s;
+	
+}
+.navEl:hover{
+	transform: translateY(10px);
+}
+
+.navEl label {
+	color: black;	
+}
+
+.banner {
+    min-height: 100px;
+    background: transparent;
+}
+
+#avatar {
+	width: 324px;
+	height: 300px;
+}
+
+#sesLoggin {
+	display: inline-block;
+}
+
+.dropdown-content a {
+ padding: 0px;
+ background-color: #d2d2d2;
+ width: 324px;
+ height: 50px;
+}
