@@ -143,4 +143,31 @@
 		return true;
 	}
 
+	// here! 20.03.
+	function giveAdmRight ($login) {
+		$mysqli = connectDB();
+		$mysqli->query("UPDATE `users` SET `admin`='1' WHERE `login` ='$login' ");
+		closeDB($mysqli);
+	}
+
+	function rmvAdmRight ($login) {
+		$mysqli = connectDB();
+		$mysqli->query("UPDATE `users` SET `admin`='0' WHERE `login` ='$login' ");
+		closeDB($mysqli);
+	}
+
+	function checkAdm ($login) {
+		$mysqli = connectDB();
+		$results_set = $mysqli->query("SELECT `admin` FROM `users` WHERE `login` ='$login' ");
+		$row = $results_set->fetch_assoc();
+		closeDB($mysqli);
+		return $row['admin'];
+
+
+		
+	}
+
+
+
+
 ?>
