@@ -27,6 +27,7 @@
 			<li><a href="index.php" >Головна</a></li>
 			<li><a href="blog.php" >Блог</a></li>
 			<li><a href="archphoto.php" >Архів фото</a></li>
+			<li><a href="archphoto.php" >Про автора</a></li>
 			<li><a href="reg.php" >Реєстрація</a></li>	
 			<li><div><a href="javascript:collapsElement('authForm')" rel="nofollow">Авторизація</a>
 					<div class="dropdown-content">
@@ -52,20 +53,33 @@
 	 	}
 	</script>
 	<div id="content">
-		<div id="description">
+		<!--<div id="description">
 			<h2>Мій Блог!</h2>
 			<h3>Шановний читачу, вітаю тебе у моєму блозі. Тут я розповідаю про події в моєму житті.<br>
 				Сподіваюся тобі вони будуть цікавими і ти з нетерпінням будеш чекати нових :)
 			</h3>
-		</div>
-		<div class="banner">
+		</div>-->
+		<!--<div class="banner">
 			<img src="images/baner1.jpg">
-		</div>
+		</div>-->
+					<!-- banner -->
+				<div class="banner">
+				<div class="container">
+					<div class="banner-info">
+						<h2>NEW BRANDING STYLE</h2>
+						<p>see our new graphic design collection</p>
+						<div class="more">
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+				</div>
+				</div>
+			<!-- //banner -->
 	 	<div id="navigation">
 			<div id="label"><b>Зовнішні джерела:</b></div>
 				<div class="navEl">
 			 		<a href="http://vsviti.com.ua/nature/9476">
-			 		<img src="images/1.jpg"></br>
+			 		<img src="images/11.jpg"></br>
 			 		<label>Найкращі<br>пейзажі</label></a>
 		 		</div>
 				<div class="navEl">

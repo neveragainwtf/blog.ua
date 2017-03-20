@@ -28,6 +28,7 @@
 			<li><a href="index.php" >Головна</a></li>
 			<li><a href="blog.php" >Блог</a></li>
 			<li><a href="archphoto.php" >Архів фото</a></li>
+			<li><a href="#" >Про автора</a></li>
 			<li><a href="reg.php" >Реєстрація</a></li>	
 			<li><div><a href="javascript:collapsElement('authForm')" rel="nofollow">Авторизація</a>
 					<div class="dropdown-content">

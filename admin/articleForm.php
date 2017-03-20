@@ -14,7 +14,7 @@
 		<!-- <p><img style="width: 1000px; height: 300px;" src="photo/<?php //echo $row['photo'] ?> "> </p> -->			
 		<?php 
 		if($row['photo'] != '') { 
-		echo "<p><img style='width: 1000px; height: 300px;' src=photo/".$row['photo']."> </p>";
+		echo "<p><img style='width: 100%; height: 300px;' src=photo/".$row['photo']."> </p>";
 	}
 		?>			
 		<p><b><?php echo $row['title'] ?></b><br></p><p><?php echo $row['intro_text'] ?></p><p><?php echo $row['full_text'] ?></p>

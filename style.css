@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 html,
 body {
 	margin:0;
@@ -66,11 +67,8 @@ li a:hover {
  color: white;
  position: flex;
 }
-.banner, img {
-	width:100%;
-}
 
-#social, img{ 
+#social img{ 
 	float: left;
 	padding: 5px 0;
 	margin-left: auto;
@@ -89,7 +87,7 @@ li a:hover {
  position: absolute;
  background-color: #d2d2d2;
  top:100px;
- width: 324px;
+ width: 256px;
 }
 
 form{
@@ -104,10 +102,14 @@ input,label{
 	margin-bottom:5px; 
 	font-size: 20px;
 }
+#loginForm input{
+	width:100%;
+}
 input{
 	width: 240px;
 	height: 30px;
 }
+
 button{
 	font-family: cursive;
 	width:55px;
@@ -146,14 +148,13 @@ button:hover{
 	color: black;	
 }
 
-.banner {
+/*.banner {
     min-height: 100px;
     background: transparent;
-}
+}*/
 
-#avatar {
-	width: 324px;
-	height: 300px;
+#avatar img{
+	width: 100%;
 }
 
 #sesLoggin {
@@ -163,6 +164,64 @@ button:hover{
 .dropdown-content a {
  padding: 0px;
  background-color: #d2d2d2;
- width: 324px;
+ width: 100%;
  height: 50px;
 }
+
+/*-- banner --*/
+.banner{
+	background: url(../images/1.jpg) no-repeat 0px -165px;
+	background-size: cover;
+	min-height: 700px;
+	width: 100%;
+	}
+.banner-info{
+	text-align:center;
+	padding-top: 11em;
+	}
+.banner-info h2{
+	color:#fff;
+	font-size:60px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:600px;
+	margin:0;
+	}
+.banner-info p{
+	margin: 2em 0 4em;
+	font-size: 22px;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	}
+.more {
+	text-align:center;
+	}
+.more a{
+	padding: 14px 0px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	transition: .5s all;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-o-transition: .5s all;
+	-ms-transition: .5s all;
+	background: url(../images/1.png) no-repeat 10em 1.4em #5DC9C9;
+	width: 16%;
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+	}
+.more a:hover{
+	text-decoration:none;
+	color:#5DC9C9;
+	border:1px solid #5DC9C9;
+	background: no-repeat 10em 1.4em #fff;
+	display:block;
+	text-decoration: none;
+	}
+/*-- //banner --*/
