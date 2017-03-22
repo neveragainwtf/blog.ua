@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Блог!</title>
+	<title>Про автора</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -54,13 +54,17 @@
 	 	}
 	</script>
 	<div id="content">
-		<div id="description">
-			<h2>Мій Блог</h2>
-			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
+		<div style="text-align: center; font-family: 'Roboto', sans-serif; ">
+			<h2>Про автора</h2>
+			<div id="aboutAuthor">
+				asdasdasdasd
+				asdasd
+				asdasd
+				asdasd
+				asd
+				asd
+			</div>
 		</div>
-		<div id="articleLine">
-			<?php require_once "admin/photoresult.php" ?>			
-		</div>	 	
 		<div id="footer">
 			<div id="social">
 				<a href="https://vk.com"><img src="images/footVK.jpg" alt="ВКонтакті" class="footPictVk"></a>

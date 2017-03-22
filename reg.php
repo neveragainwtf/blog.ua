@@ -53,7 +53,7 @@
 			<li><a href="index.php" >Головна</a></li>
 			<li><a href="blog.php" >Блог</a></li>
 			<li><a href="archphoto.php" >Архів фото</a></li>
-			<li><a href="#" >Про автора</a></li>
+			<li><a href="aboutAuthor.php" >Про автора</a></li>
 			<li><a href="reg.php" >Реєстрація</a></li>	
 			<li><div><a href="javascript:collapsElement('authForm')" rel="nofollow">Авторизація</a>
 					<div class="dropdown-content">
@@ -80,16 +80,19 @@
 	</script>
 	<div id="content">
 		<div id="regForm">
+			<img src="images/regFrom1-photo.jpg"><br>
 			<form id="form1" action="" method="post" >
 			<?php
 				if ($_SESSION['error_login'] === 1) echo "<p><span style = 'color: red;'>Некоректний логін</span></p>";
 				if ($_SESSION['error_password'] === 1) echo "<p><span style = 'color: red;'>Некоректний пароль</span></p>";
-			?>			
+				unset($_SESSION['error_login']);
+				unset($_SESSION['error_password']);
+			?>					
 				<label>Ваш логін:</label><br>
 				<input type="text" name="login" /><br>	
 				<label>Ваш пароль:</label><br>
 				<input type="password" name="password" /><br>			
-				<input type="submit" name="reg" value="Зареєструватися" />   
+				<input id="styleButtReg" type="submit" name="reg" value="Зареєструватися" />   
 					
 			</form>
 		</div>

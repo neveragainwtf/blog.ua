@@ -6,7 +6,6 @@
 			$photo = $_FILES["photo"];
 			$title = $_POST["title"];
 			if (isSecurityPhoto($photo)) {
-				echo "vse gud!";
 				loadPhoto ($photo, $title);
 			}
 			else {/*$message = "Помилка завантаження фото";

@@ -11,6 +11,8 @@
 	<title>Блог!</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
 </head>
 <body>
 	<?php
@@ -27,7 +29,7 @@
 			<li><a href="index.php" >Головна</a></li>
 			<li><a href="blog.php" >Блог</a></li>
 			<li><a href="archphoto.php" >Архів фото</a></li>
-			<li><a href="archphoto.php" >Про автора</a></li>
+			<li><a href="aboutAuthor.php" >Про автора</a></li>
 			<li><a href="reg.php" >Реєстрація</a></li>	
 			<li><div><a href="javascript:collapsElement('authForm')" rel="nofollow">Авторизація</a>
 					<div class="dropdown-content">
@@ -52,28 +54,23 @@
 	 		}
 	 	}
 	</script>
-	<div id="content">
-		<!--<div id="description">
-			<h2>Мій Блог!</h2>
-			<h3>Шановний читачу, вітаю тебе у моєму блозі. Тут я розповідаю про події в моєму житті.<br>
-				Сподіваюся тобі вони будуть цікавими і ти з нетерпінням будеш чекати нових :)
-			</h3>
-		</div>-->
-		<!--<div class="banner">
-			<img src="images/baner1.jpg">
-		</div>-->
-					<!-- banner -->
-				<div class="banner">
-				<div class="container">
-					<div class="banner-info">
-						<h2>NEW BRANDING STYLE</h2>
-						<p>see our new graphic design collection</p>
-						<div class="more">
-							<a href="#">Learn More</a>
-						</div>
-					</div>
-				</div>
-				</div>
+	<div id="content">		
+			<!-- banner -->
+		<div class="banner">
+		<div class="container">
+			<div class="banner-info">
+				<h2>Блог Мандрівника</h2>
+				<pre>
+                Привіт, шановний мандрівнику. Якщо ти весела та енергійна людина,
+            яка любить подорожувати та постійно відкривати для себе щось цікаве
+    і нове, вітаю, ти звернувся за адресою.Тисни на кнопку "Читати", та
+ поринь у світ моїх розповідей про цікаві подорожі.</pre>				
+				<div class="more">
+					<a href="blog.php">Читати!</a>
+				</div>	
+			</div>
+		</div>
+		</div>		
 			<!-- //banner -->
 	 	<div id="navigation">
 			<div id="label"><b>Зовнішні джерела:</b></div>
@@ -93,6 +90,10 @@
 					<label>Спільнота<br>блогерів</label></a>
 				</div>
 	 		</div>
+		</div>
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/tDrayzer.jpg">
+			<pre>         Тільки про дві речі ми будемо шкодувати на смертному одрі - що мало любили <br>      і мало подорожували 
+																Марк Твен</pre>
 		</div>
 		<div id="footer">
 			<div id="social">

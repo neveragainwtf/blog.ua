@@ -161,10 +161,7 @@
 		$results_set = $mysqli->query("SELECT `admin` FROM `users` WHERE `login` ='$login' ");
 		$row = $results_set->fetch_assoc();
 		closeDB($mysqli);
-		return $row['admin'];
-
-
-		
+		return $row['admin'];		
 	}
 
 

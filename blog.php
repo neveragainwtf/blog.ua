@@ -28,7 +28,7 @@
 			<li><a href="index.php" >Головна</a></li>
 			<li><a href="blog.php" >Блог</a></li>
 			<li><a href="archphoto.php" >Архів фото</a></li>
-			<li><a href="#" >Про автора</a></li>
+			<li><a href="aboutAuthor.php" >Про автора</a></li>
 			<li><a href="reg.php" >Реєстрація</a></li>	
 			<li><div><a href="javascript:collapsElement('authForm')" rel="nofollow">Авторизація</a>
 					<div class="dropdown-content">
@@ -54,6 +54,9 @@
 	 	}
 	</script>
 	<div id="content">
+		<!-- <div class="banner">
+			<img src="images/baner1.jpg">
+		</div> -->
 		<div id="description">
 			<h2>Мій Блог</h2>
 			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
