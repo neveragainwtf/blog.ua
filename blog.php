@@ -57,13 +57,18 @@
 		<!-- <div class="banner">
 			<img src="images/baner1.jpg">
 		</div> -->
+
+
+
 		<div id="description">
-			<h2>Мій Блог</h2>
-			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
+			<!-- <h2>Мій Блог</h2>
+			 <h3>Тут я публікую цікаві історії з мого життя.</h3> -->
+
 		</div>
 		<div id="articleLine">
 			<?php require_once "admin/articleresult.php" ?>			
-		</div>	 	
+		</div>
+
 		<div id="footer">
 			<div id="social">
 				<a href="https://vk.com"><img src="images/footVK.jpg" alt="ВКонтакті" class="footPictVk"></a>

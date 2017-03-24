@@ -43,7 +43,7 @@
  	function getAllArticles	() {
 		session_start();
 		$mysqli = connectDB();
-		$results_set = $mysqli->query('SELECT * FROM `articles` ORDER BY `id` DESC ');
+		$results_set = $mysqli->query('SELECT * FROM `articles` ORDER BY `id` DESC  ');
 		closeDB($mysqli);
 		return $results_set;
 	}
@@ -162,6 +162,22 @@
 		$row = $results_set->fetch_assoc();
 		closeDB($mysqli);
 		return $row['admin'];		
+	}
+	// here! 23.03.
+	function getLastNews () {
+		session_start();
+		$mysqli = connectDB();
+		$results_set = $mysqli->query('SELECT * FROM `articles` ORDER BY `id` DESC limit 3 ');
+		closeDB($mysqli);
+		return $results_set;
+	}
+
+	function getAllNews () {
+		session_start();
+		$mysqli = connectDB();
+		$results_set = $mysqli->query('SELECT * FROM `articles` ORDER BY `id` DESC  ');
+		closeDB($mysqli);
+		return $results_set;
 	}
 
 

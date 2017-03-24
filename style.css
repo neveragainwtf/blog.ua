@@ -127,7 +127,7 @@ button:hover{
 	padding: 50px;
 }
 
-#label{
+.label{
 	text-align: center;
 	font-size: 20px;
 	font-family: cursive;
@@ -256,13 +256,14 @@ button:hover{
 }
 
 .parallax-window {
-	height: 350px;
+	height: 450px;
 	box-shadow:0 0 0 256px rgba(0, 0, 0, 0.73) inset;
+	padding-bottom: 50px;
 }
 
 .parallax-window pre{
-	margin: 0 20%;
-	padding: 5% 0;
+	padding-top: 200px;
+	padding-left: 30%;
 	font-size: 22px;
 	color: white;
 	font-family: 'Roboto', sans-serif;	
@@ -271,5 +272,60 @@ button:hover{
 /*#aboutAuthor {
 
 }*/
+
+#lastNews {
+	display: table;
+	margin: 30px auto;
+	margin-bottom: 100px;
+	padding: 50px;
+}
+
+.newsBox {
+	display: inline-block;
+	text-align: center;
+	padding: 0 25px;
+
+	
+}
+
+.newsBox img {
+	width: 400px;
+	height: 250px;
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.newsBox img:hover{
+	/*width: 300px;
+	height: 300px;*/
+-webkit-filter: contrast(185%); 
+}
+
+#aboutAutShort {
+	background-color: #e4e4e4;
+	background-attachment: fixed;
+	display: table;
+	margin:auto;
+	padding: 50px;
+	width: 100%;
+}
+
+#aboutAutShort img {
+	margin: 3% 9%;
+	width: 25%;
+	border-radius: 19%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	padding: 0 25px;
+}
+
+#aboutAutText {
+	
+}
+
 
 

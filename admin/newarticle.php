@@ -19,9 +19,9 @@
 	?>
 	<div>
 		<form name="newarticle" method="post" action="">
-		<p>
-			Назва : <input type="text" name="title" />
-		</p>
+		<div>
+			Назва : <br> <input type="text" name="title" />
+		</div>
 		<div>Вступ:<br />
 			<textarea name="intro_text" cols="40" rows="10" ></textarea>
 		</div>

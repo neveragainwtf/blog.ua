@@ -57,23 +57,47 @@
 	<div id="content">		
 			<!-- banner -->
 		<div class="banner">
-		<div class="container">
-			<div class="banner-info">
-				<h2>Блог Мандрівника</h2>
+			<div class="container">
+				<div class="banner-info">
+					<h2>Блог Мандрівника</h2>
 				<pre>
                 Привіт, шановний мандрівнику. Якщо ти весела та енергійна людина,
             яка любить подорожувати та постійно відкривати для себе щось цікаве
     і нове, вітаю, ти звернувся за адресою.Тисни на кнопку "Читати", та
  поринь у світ моїх розповідей про цікаві подорожі.</pre>				
-				<div class="more">
-					<a href="blog.php">Читати!</a>
-				</div>	
-			</div>
-		</div>
+					<div class="more">
+						<a href="blog.php">Читати!</a>
+					</div>				
+				</div>
+			</div>		
 		</div>		
 			<!-- //banner -->
+		<!-- 23.03 -->
+		<div id="lastNews" >
+			<div class="label"><b>Останні розповіді:</b></div>
+			 <?php require_once "admin/lastnews.php" ?>								
+		</div>
+		<div id="aboutAutShort">
+			<img src="images/myPic.jpg">			
+			<div id="aboutAutText" >			
+				<h2>Коротко про мене</h2>
+				<hr>
+				<!-- <br> -->			
+				првівфіаілвдоадо asdasdasd 
+				asdasads
+				ads
+				as
+				asd
+				asdsdgklidfsjg jg kg dsfjg 
+				 fdgjkp sj 
+				 gdsfg jsdpfgj	
+			</div>						
+		</div>
+
+			<!-- end 23/03 -->
+			
 	 	<div id="navigation">
-			<div id="label"><b>Зовнішні джерела:</b></div>
+			<div class="label"><b>Зовнішні джерела:</b></div>
 				<div class="navEl">
 			 		<a href="http://vsviti.com.ua/nature/9476">
 			 		<img src="images/11.jpg"></br>

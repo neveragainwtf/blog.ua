@@ -10,14 +10,11 @@
 			}
 			else {/*$message = "Помилка завантаження фото";
 			unset($message);*/
-			echo "vse ploho!";
+			// echo "vse ploho!";
 			loadPhoto ($photo, $title);
 			}
 		}
-
-
 ?>	
-
 
 <!DOCTYPE html>
 <html>
