@@ -58,7 +58,7 @@
 			<h2>Мій Блог</h2>
 			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
 		</div>
-		<div id="articleLine">
+		<div id="allPhoto">
 			<?php require_once "admin/photoresult.php" ?>			
 		</div>	 	
 		<div id="footer">
@@ -70,5 +70,18 @@
 		</div>	
 	</div>
 
+
+<!-- <script src="js/testEv.js"></script> -->
+<!-- <script>
+function myFunction() {
+    var img = document.getElementsByTagName("img");
+    
+        
+        console.log("pzdc");
+        document.getElementsByTagName('photoBox').style.display = 'none';
+        
+    
+}
+</script> -->
 </body>
 </html>

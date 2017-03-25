@@ -11,8 +11,10 @@
 	<title>Блог!</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/parallax.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+	<!-- <script src="js/jquery.min.js"></script> -->
+	<!-- <script src="js/jquery-3.2.0.min.js"></script> -->
+	<!-- <script src="js/parallax.min.js"></script> -->
 </head>
 <body>
 	<?php
@@ -82,7 +84,7 @@
 			<div id="aboutAutText" >			
 				<h2>Коротко про мене</h2>
 				<hr>
-				<!-- <br> -->			
+
 				првівфіаілвдоадо asdasdasd 
 				asdasads
 				ads
@@ -115,9 +117,13 @@
 				</div>
 	 		</div>
 		</div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="images/tDrayzer.jpg">
+		<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="images/baner1.jpg">
 			<pre>         Тільки про дві речі ми будемо шкодувати на смертному одрі - що мало любили <br>      і мало подорожували 
 																Марк Твен</pre>
+		 --><!-- </div>
+ -->		<div id="bottomBaner" >		
+		<pre>         Тільки про дві речі ми будемо шкодувати на смертному одрі - що мало любили <br>      і мало подорожували 
+																Марк Твен</pre>		
 		</div>
 		<div id="footer">
 			<div id="social">
