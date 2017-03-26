@@ -42,7 +42,7 @@ body {
 	height:40px;
 }
 
-ul {
+#header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ ul {
 	
 }
 
-li {
+#header li {
     float: left;
 	height: 100px;
   	display: flex;
@@ -102,6 +102,7 @@ li a:hover {
  background-color: #d2d2d2;
  top:100px;
  width: 256px;
+ z-index: 100;
 }
 
 form{
@@ -118,6 +119,7 @@ input,label{
 }
 #loginForm input{
 	width:100%;
+
 }
 input{
 	width: 240px;
@@ -130,11 +132,12 @@ button{
 	width:55px;
 	height:30px;
 	background-color:#d2d2d2;
-	border: 1px solid black; 
+	border: 1px solid black;
+	font-family: 'Jura', sans-serif;
 }
-button:hover{
+/*button:hover{
 	background-color:#5DC9C9;
-}
+}*/
 
 #navigation {
 	display: table;
@@ -182,6 +185,7 @@ button:hover{
  background-color: #d2d2d2;
  width: 100%;
  height: 50px;
+ z-index: 100;
 }
 
 /*-- banner --*/
@@ -299,9 +303,18 @@ button:hover{
 .newsBox {
 	display: inline-block;
 	text-align: center;
-	padding: 0 25px;
+	/*padding: 0 10px;*/
+	margin: 0 25px;
+	/*border: 1px solid #5DC9C9;
+	border-radius: 15%;*/
+}
 
-	
+.newsBox a{
+	color: black;
+}
+
+.newsBox a label:hover{
+	color: red;
 }
 
 .newsBox img {
@@ -320,7 +333,6 @@ button:hover{
 
 #aboutAutShort {
 	background-color: #f4f4f4;
-	/*background-attachment: fixed;*/
 	display: table;
 	margin:auto;	
 	width: 100%;
@@ -336,33 +348,17 @@ button:hover{
 	padding: 0 25px;
 }
 
-#aboutAutText {
-	/*some code here*/
-}
-
-#allPhoto {
-	display: table;
-	/*margin: 30px auto;*/
-	margin-bottom: 100px;
-	padding: 100px;
-}
-
-.photoBox {
-	display: inline-block;
-	text-align: center;
-	padding: 0 25px;
-
-	
+.photoBox {	
+	position: relative;
+	z-index: 50;
 }
 
 .photoBox img {
-	width: 400px;
-	height: 250px;
-	-webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
+	width: 90%;
+	display: block;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    z-index: 50;
 }
 
 .photoBox img:hover{	
@@ -372,12 +368,9 @@ button:hover{
 }
 
 #bottomBaner {
-	background: url(images/baner1.jpg) no-repeat/* 0px -165px*/;
+	background: url(images/baner1.jpg) no-repeat -200px 165px;
 	background-size: cover;
 	background-attachment: fixed; 
-	/*min-height: 400px;*/
-	/*width: 100%;*/
-
 	height: 350px;
 	box-shadow:0 0 0 256px rgba(0, 0, 0, 0.73) inset;
 	padding-bottom: 50px;
@@ -390,7 +383,81 @@ button:hover{
 	color: white;
 	font-family: 'Roboto', sans-serif;	
 }
+/*done*/
+/*button UP*/
+.btn_up {
+	position: fixed;
+	bottom: -55px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #5DC9C9;
+	background: white;
+	z-index: 100;
+	outline: 0!important;
+	transition: .4s;
+}
+
+.btn_up:after{
+	content:'';
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #5DC9C9;
+	border-left: 2px solid #5DC9C9;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 4px; bottom: 0;
+	left: 0; right: 0;
+	margin: auto;
+}
+
+.btn_up.active{
+	bottom: 55px;
+}
+/*end*/
+/*button up one Step*/
+/*.slider{
+	width: 600px;
+	height: 400px;
+	position: absolute;
+	top: 200px; left: 0; right: 0;
+	margin: auto;
+	background: #ccc;
+}	
+
+.slider ul{
+	position: absolute;
+	top: 0px; left: 0;
+	right: 0; bottom: 0;
+}
+
+.slider ul li{
+	position: absolute;
+	top: 0px; left: 0;
+	right: 0; bottom: 0;
+	background-size: cover;
+	background-position: center;
+}
+	
+
+.prev, .next button{
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+	&.prev{
+		left: -80px;
+	}
+
+	&.next{
+		right: -80px;
+	}
+*/
 
 
+/*end*/
 
 

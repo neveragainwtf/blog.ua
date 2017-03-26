@@ -11,6 +11,7 @@
 	<title>Блог!</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/jquery-3.2.0.min.js" ></script>
 </head>
 <body>
 	
@@ -78,5 +79,6 @@
 		</div>	
 	</div>
 
+<script src="js/scripts.js" ></script>
 </body>
 </html>

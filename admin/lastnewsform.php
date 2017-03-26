@@ -10,14 +10,15 @@
 		
 
 	<div class="newsBox">
-		<a style="color: black;" href="../blog.php">
+		
 		<?php 
 		if($row['photo'] != '') {
 		echo "<p><img src=photo/".$row['photo']."> </p>";
 		echo "<label> ".$row['title'];"</label>";
+		echo "<a href='http://zxc.blog.ua/blog.php#".$row['id']."'><br><br><label>Читати...</label></a>";
 		}
 		?>
-		</a>
+		
 	 </div>
 			
 

@@ -8,14 +8,18 @@
 
 
 	<div class="photoBox"  >
-		<!-- <a style="color: black;" href="../blog.php"> -->
+		
 		<?php 
 		if($row['photo'] != '') {
-		echo "<p><img onclick='myFunction()' src=photo/".$row['photo']."> </p>";
-		// echo "<label> ".$row['title'];"</label>";
+		
+
+				echo "<p><img src=photo/".$row['photo']."> </p>";
+				echo "<a href='http://zxc.blog.ua/blog.php#".$row['id']."'></a>";
+			
+		
 		}
 		?>
-		</a>
+		
 	 </div>
 
 

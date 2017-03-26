@@ -8,11 +8,16 @@
 	<div id="articleBox" style=" font-family: serif; text-align: justify-all; padding: 20px 20%; font-size: 18px;">
 		
 		
-		<!-- <p><img style="width: 1000px; height: 300px;" src="photo/<?php //echo $row['photo'] ?> "> </p> -->			
+				
 		<?php 
 		if($row['photo'] != '') { 
-		echo "<p><img  style='width: 100%; height: 300px;' src=photo/".$row['photo']."> </p>";
+		echo " <a id=".$row['id'].">
+		<p><img  style='width: 100%; height: 300px;' src=photo/".$row['photo']."> </p>
+		</a>
+		";
 	}
+		// echo "<a href='http://zxc.blog.ua/blog.php#".$row['id']."'>asdasdsa".$row['id']."</a>";
+		// echo "<a id=".$row['id']." href='#'>asdasdsa</a>";
 		?>
 				
 		<p><b><?php echo $row['title'] ?></b><br></p><p><?php echo $row['intro_text'] ?></p><p><?php echo $row['full_text'] ?></p>
@@ -22,3 +27,4 @@
 	</div>		
 </body>
 </html>
+

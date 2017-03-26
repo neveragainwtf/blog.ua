@@ -11,6 +11,7 @@
 	<title>Блог!</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/jquery-3.2.0.min.js" ></script>
 </head>
 <body>
 	
@@ -54,13 +55,15 @@
 	 	}
 	</script>
 	<div id="content">
-		<div id="description">
+		<!-- <div id="description">
 			<h2>Мій Блог</h2>
 			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
-		</div>
-		<div id="allPhoto">
+		</div> -->
+		<div id="allPhoto"> 
 			<?php require_once "admin/photoresult.php" ?>			
-		</div>	 	
+		</div>
+		
+		
 		<div id="footer">
 			<div id="social">
 				<a href="https://vk.com"><img src="images/footVK.jpg" alt="ВКонтакті" class="footPictVk"></a>
@@ -69,6 +72,8 @@
 			</div>
 		</div>	
 	</div>
+<script src="js/scripts.js" ></script>
+	<!-- <script src="js/slider.js" ></script> -->
 
 
 <!-- <script src="js/testEv.js"></script> -->
