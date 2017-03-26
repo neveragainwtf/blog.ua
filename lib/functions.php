@@ -130,6 +130,14 @@
 		closeDB($mysqli);
 	}
 
+	function deletePhoto($title) {
+		session_start();
+		$mysqli = connectDB();
+		$mysqli->query("UPDATE `articles` SET `photo`='' WHERE `title` = '$title' ");
+		closeDB($mysqli);
+		return $results_set = true;
+	}
+
 	function isSecurityPhoto ($photo) {
 		$name = $photo["name"];
 		$type = $photo["type"];

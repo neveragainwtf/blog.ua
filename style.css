@@ -415,6 +415,22 @@ button{
 .btn_up.active{
 	bottom: 55px;
 }
+
+#regFormNonId {
+	position: relative;
+	z-index: 50;
+	/*bottom: -250px;*/
+} 
+
+#regFormNonId img {
+	width: 200px;
+	display: block;
+    top: 0; /*bottom: 0;*/ left: 0; right: 0;
+    margin: auto;
+    z-index: 50;
+}
+
+
 /*end*/
 /*button up one Step*/
 /*.slider{

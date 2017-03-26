@@ -12,6 +12,7 @@
 		<a href="../index.php">Повернутися до блогу</a><br>
 		<a href="newarticle.php">Додати нову статтю</a><br>
 		<a href="newphoto.php">Додати фото</a><br>
+		<a href="deletePhoto.php">Видалити фото</a><br>
 		<a href="deleteArticle.php">Видалити статтю</a><br>
 		<a href="addAdmin.php">Надати права адміністратора</a><br>
 		<a href="rmvAdmin.php">Вилучити права адміністратора</a><br>
