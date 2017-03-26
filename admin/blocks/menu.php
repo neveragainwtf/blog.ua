@@ -11,6 +11,7 @@
 		<a href="index.php">Головна</a><br>
 		<a href="../index.php">Повернутися до блогу</a><br>
 		<a href="newarticle.php">Додати нову статтю</a><br>
+		<a href="edit-article.php">Редагувати статтю</a><br>
 		<a href="newphoto.php">Додати фото</a><br>
 		<a href="deletePhoto.php">Видалити фото</a><br>
 		<a href="deleteArticle.php">Видалити статтю</a><br>

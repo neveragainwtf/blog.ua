@@ -40,6 +40,30 @@
 		return $success;
 	}
 
+	 function updateArticle($title, $intro_text, $full_text) {
+		$mysqli = connectDB();
+	   	  $success = $mysqli->query ("UPDATE `articles` SET `title` = '$title', `intro_text` = '$intro_text', `full_text` = '$full_text' WHERE `title` = '$title' ");
+		closeDB($mysqli);
+		return $success;
+	}
+	// $mysqli->query("UPDATE `articles` SET `photo`='' WHERE `title` = '$title' ");
+
+	function findArticle($title) {
+		$mysqli = connectDB();
+		$results_set = $mysqli->query ("SELECT * FROM `articles` WHERE `title` = '$title'");
+        $row = $results_set->fetch_array();	  
+		
+		
+		print_r($row);
+		$t1 = $row[1];
+		$t2 = $row[2];
+		$t9 = $row[3];
+		// $t4 = $row[5];
+
+		require_once "../admin/edit-form.php";
+		closeDB($mysqli);
+	}
+
  	function getAllArticles	() {
 		session_start();
 		$mysqli = connectDB();
