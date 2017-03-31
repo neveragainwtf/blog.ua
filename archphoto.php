@@ -24,7 +24,7 @@
 		}
 	?>
 
-<div id="wrapper">
+<div id="wrapper" style="box-shadow: inset 0px 0px 135px -10px rgba(0,0,0,0.95);">
 	<div id="header">
 		<ul>
 			<li><img src="images/emb.jpg" id="embleme"></li>
@@ -62,6 +62,9 @@
 			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
 		</div> -->
 		<div id="allPhoto"> 
+			<div id="sloganBlog">
+				<b>Поринь в емоції!</b>			
+			</div>
 			<?php require_once "admin/photoresult.php" ?>			
 		</div>
 		

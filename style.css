@@ -142,8 +142,8 @@ button{
 #navigation {
 	display: table;
 	margin: auto;
-	margin-top: 200px;
-	padding: 50px;
+	margin-top: 20px;
+	/*padding: 50px;*/
 }
 
 .label{
@@ -294,19 +294,24 @@ button{
 }*/
 
 #lastNews {
-	display: table;
-	margin: 30px auto;
-	margin-bottom: 100px;
-	padding: 50px;
+	/*display: table;*/
+	margin: 70px auto;
+	/*margin-bottom: 100px;*/
+	/*padding: 50px;*/
+
+	width: 80%;
+	margin-left: 10%;
+	/*align-items: center;*/
 }
 
 .newsBox {
+	width: 30%;
 	display: inline-block;
 	text-align: center;
-	/*padding: 0 10px;*/
-	margin: 0 25px;
-	/*border: 1px solid #5DC9C9;
-	border-radius: 15%;*/
+	align-items: center;
+	margin-left: 3%;
+	/*margin: 0 25px;*/
+	
 }
 
 .newsBox a{
@@ -318,8 +323,8 @@ button{
 }
 
 .newsBox img {
-	width: 400px;
-	height: 250px;
+	width: 100%;
+	height: 270px;
 	-webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
        -o-transition: all 1s ease;
@@ -429,6 +434,38 @@ button{
     margin: auto;
     z-index: 50;
 }
+
+#articleLine {
+	width: 80%;
+	margin-left: 10%;
+	box-shadow: 0 0 180px rgba(0,0,0,0.5);
+}
+
+#topArticlesBaner {
+	width: 80%;
+	margin-left: 10%;
+	background: url(images/topBlogBaner.jpg) no-repeat  0 -215px ;
+	background-size: cover;
+	/*background-attachment: fixed; */
+	height: 350px;
+	box-shadow:0 0 0 256px rgba(0, 0, 0, 0.73) inset;
+	padding-bottom: 50px;
+}
+
+#sloganBlog {
+	background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+	text-align: center;
+	margin: 10px 0;
+	font-size: 95px;
+}
+
+
+
 
 
 /*end*/

@@ -5,7 +5,8 @@
 	<title></title>
 </head>
 <body>	
-	<div id="articleBox" style=" font-family: serif; text-align: justify-all; padding: 20px 20%; font-size: 18px;">
+	<!-- <div id="articleBox" style=" font-family: serif; text-align: justify-all; padding: 20px 20%; font-size: 18px;"> -->
+	<div id="articleBox" style=" font-family: serif; text-align: justify-all; padding: 4% 9%; font-size: 18px;">
 		
 		
 				

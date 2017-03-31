@@ -61,12 +61,18 @@
 
 
 
-		<div id="description">
-			<!-- <h2>Мій Блог</h2>
-			 <h3>Тут я публікую цікаві історії з мого життя.</h3> -->
+		<!-- <div id="description">
+			<h2>Мій Блог</h2>
+			 <h3>Тут я публікую цікаві історії з мого життя.</h3>
 
+		</div> -->
+
+		<div id="topArticlesBaner" >		
 		</div>
 		<div id="articleLine">
+			<div id="sloganBlog">
+				<b>Мандруй зі мною :)</b>			
+			</div>
 			<?php require_once "admin/articleresult.php" ?>			
 		</div>
 

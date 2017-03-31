@@ -76,43 +76,52 @@
 			<!-- //banner -->
 		<!-- 23.03 -->
 		<div id="lastNews" >
-			<div class="label"><b>Останні розповіді:</b></div>
+			<div class="label"><b id="sloganBlog" style="font-size:65px;">Останні розповіді:</b></div>
 			 <?php require_once "admin/lastnews.php" ?>								
 		</div>
 		<div id="aboutAutShort">
 			<img src="images/myPic.jpg">			
 			<div id="aboutAutText" >			
-				<h2>Коротко про мене</h2>
+				<h2 id="sloganBlog" >Коротко про мене</h2>
 				<hr>
-
-				првівфіаілвдоадо asdasdasd 
-				asdasads
-				ads
-				as
-				asd
-				asdsdgklidfsjg jg kg dsfjg 
-				 fdgjkp sj 
-				 gdsfg jsdpfgj	
+				<div style="font-size: 20px;">
+					<p>
+						Ще раз привіт. Вітаю Вас у моєму блозі. Тут я розповідаю про свої мандрівки.
+					Мене звуть Андрій, я студент. Навчаюся у Національному університеті "Львівська політехніка" за напрямком
+					"Комп'ютерна Інженерія". Я цікавлюсь новими технологіями, музикою та дуже сильно люблю подорожувати.					
+					</p>
+					<p>
+						Саме моїм подорожам і присвячений цей ресурс. Я компанійська людина, яка любить ділитися враженнями.
+						Власне це і стало поштовхом для створення блогу. У своїх розповідях я намагаюсь максимально передати
+						атмосферу та настрій, які супроводжують мене. Тому не сумніваюсь що тобі буде цікаво.
+					</p>
+					<p>
+						Якщо Ви хочете дізнатися більше інформації про мене, переходьте у розділ "Про автора".
+						
+					</p>
+				</div>
 			</div>						
 		</div>
 
 			<!-- end 23/03 -->
-			
+			<div id="sloganBlog" style="margin-top: 40px; font-size:37px; ">
+				Зовнішні джерела
+			</div>
 	 	<div id="navigation">
-			<div class="label"><b>Зовнішні джерела:</b></div>
+			<div class="label"></div>
 				<div class="navEl">
 			 		<a href="http://vsviti.com.ua/nature/9476">
-			 		<img src="images/11.jpg"></br>
+			 		<img src="images/411.png"></br>
 			 		<label>Найкращі<br>пейзажі</label></a>
 		 		</div>
 				<div class="navEl">
 					<a href="https://karabas.com/ua/">
-					<img src="images/2.jpg"></br>
+					<img src="images/311.png"></br>
 					<label>Головні<br>події</label></a>
 				</div>
 				<div class="navEl">
 					<a href="https://vk.com/tvblogger">
-					<img src="images/3.jpg"></br>
+					<img src="images/211.png"></br>
 					<label>Спільнота<br>блогерів</label></a>
 				</div>
 	 		</div>

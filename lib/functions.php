@@ -199,7 +199,7 @@
 	function getLastNews () {
 		session_start();
 		$mysqli = connectDB();
-		$results_set = $mysqli->query('SELECT * FROM `articles` ORDER BY `id` DESC limit 3 ');
+		$results_set = $mysqli->query('SELECT * FROM `articles` ORDER BY `id` DESC limit 6 ');
 		closeDB($mysqli);
 		return $results_set;
 	}

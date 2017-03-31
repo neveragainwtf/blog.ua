@@ -10,6 +10,7 @@
 <html>
 <head>
 	<title>Надати права адміністрування</title>
+	
 </head>
 <body>
 	<?php
