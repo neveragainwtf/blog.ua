@@ -10,7 +10,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Блог!</title>
+	<title>Архів фото</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="js/jquery-3.2.0.min.js" ></script>

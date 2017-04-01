@@ -1,14 +1,18 @@
 <?php
+	
 	require_once "start.php";
-	require_once "../lib/functions.php";	
-?>	
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Вилучити права адміністрування</title>	
+	<title>Список зареєстрованих користувачів</title>
 
 	<link rel="stylesheet" type="text/css" href="adm_style.css">
+
+
 </head>
 <body>
 	<div id="wrapper">
@@ -23,27 +27,23 @@
 			</ul>			
 		</div>
 		<div id="content">
-			<?php
-				require_once "blocks/menu.php";				
-
-				if (isset($_POST['rmv_Adm'])) {
-					$results_set = rmvAdmRight ($_POST['login']);
-					echo "<p style='margin: 35px; color: red; font-size:19px;'>Права успішно вилучено</p>";
-						$results_set = false;
-			}			
 				
-			?>
-			<div id="marLeft">
-				<form name="rmvAdmin" method="post" action="">
-				<p>
-					Ім'я користувача : <input type="text" name="login" />
-				</p>
-				<p>
-					<input type="submit" name="rmv_Adm" value="Вилучити права адміністратора" />
-				</p>	
-				</form>
+		
+			<?php require_once "blocks/menu.php";?>
+			<div>
+				<table id="viewUsersTable">
+			  	<tr>
+			    	<td><b>Id</b></td>
+			    	<td><b>Аватар</b></td>
+			    	<td><b>Логін</b></td>
+			    	<td><b>Права доступу</b></td>
+			  	</tr>
+			  	<?php require_once "usersresult.php";?>			  	
+			</table>
+								
 			</div>
-			<div id="footer">
+		</div>
+		<div id="footer">
 			<div id="social">
 				<a href="https://vk.com"><img src="../images/footVK.jpg" alt="ВКонтакті" class="footPictVk"></a>
 				<a href="https://www.google.com.ua"><img src="../images/footGoog.jpg" alt="Google+" class="footPictGp"></a>

@@ -1,13 +1,7 @@
 <?php
 	require_once "lib/functions.php";
+	require_once "start-user-back.php";
 	session_start();
-
-	if ((checkUser($_SESSION["login"], $_SESSION["password"]))){
-		header("Location: /archphoto.php");
-		exit;
-	}
-
-
 	if (isset($_POST['reg'])){
 		$login = htmlspecialchars($_POST['login']);
 		$password = htmlspecialchars($_POST['password']);
@@ -15,7 +9,8 @@
 		unset ($_SESSION['error_login']);
 		unset ($_SESSION['error_password']);
 		unset ($_SESSION['reg_success']);
-		if ((strlen($login) < 3) || (strlen($login) > 32)) {
+		unset ($_SESSION['login_busy']);
+		if ((strlen($login) < 5) || (strlen($login) > 32)) {
 			$_SESSION['error_login'] = 1;
 			$bad = true;
 
@@ -24,21 +19,20 @@
 			$_SESSION['error_password'] = 1;
 			$bad = true;
 		}
+		if(loginFree($login) == $login){
+			$_SESSION['login_busy'] = 1;
+			$bad = true;
+		}
+
 		if (!$bad) {
 			regUser ($login, md5 ($password));
 			$_SESSION['reg_success'] = 1;
-			header("Location: index.php");
+			// header("Location: index.php");
 		}
 
 	}
-?>
 
-<?php
-		if ($_SESSION['reg_success'] == 1) {
-			echo "<span style='color: red;'>Реєстрація пройшла успішно!</span>";
-			unset($_SESSION['reg_success']);
-		}
-	?>
+?>
 
 <!DOCTYPE html>
 <html>
@@ -95,15 +89,20 @@
 			<img src="images/onlyReg.jpg"><br>
 			<form id="form1" action="" method="post" >
 			<?php
+				if ($_SESSION['login_busy'] === 1) echo "<p><span style = 'color: red;'>Логін уже використовується</span></p>";
 				if ($_SESSION['error_login'] === 1) echo "<p><span style = 'color: red;'>Некоректний логін</span></p>";
 				if ($_SESSION['error_password'] === 1) echo "<p><span style = 'color: red;'>Некоректний пароль</span></p>";
+				if ($_SESSION['reg_success'] === 1) echo "<p><span style = 'color: red;'><b>Реєстрація пройшла успішно</b></span></p>";
 				unset($_SESSION['error_login']);
+				unset($_SESSION['login_busy']);
 				unset($_SESSION['error_password']);
-			?>					
+				unset($_SESSION['reg_success']);
+			?>	
+				<label style="font-size:25px;"><b>Форма реєстрації</b></label><br><br>				
 				<label>Ваш логін:</label><br>
-				<input type="text" name="login" /><br>	
+				<input type="text" name="login" placeholder="Мінімум 5 символів" /><br>	
 				<label>Ваш пароль:</label><br>
-				<input type="password" name="password" /><br>			
+				<input type="password" name="password" placeholder="Мінімум 5 символів" /><br>			
 				<input id="styleButtReg" type="submit" name="reg" value="Зареєструватися" />					
 			</form>
 		</div>		

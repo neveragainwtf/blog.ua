@@ -444,11 +444,11 @@ button{
 #topArticlesBaner {
 	width: 80%;
 	margin-left: 10%;
-	background: url(images/topBlogBaner.jpg) no-repeat  0 -215px ;
+	background: url(images/topBlogBaner.jpg) no-repeat  0 -255px ;
 	background-size: cover;
 	/*background-attachment: fixed; */
-	height: 350px;
-	box-shadow:0 0 0 256px rgba(0, 0, 0, 0.73) inset;
+	height: 250px;
+	box-shadow:0 0 0 256px rgba(0, 0, 0, 0.53) inset;
 	padding-bottom: 50px;
 }
 
@@ -461,8 +461,10 @@ button{
     text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
 	text-align: center;
 	margin: 10px 0;
-	font-size: 95px;
+	font-size:37px;
 }
+
+
 
 
 

@@ -51,10 +51,9 @@
 	function findArticle($title) {
 		$mysqli = connectDB();
 		$results_set = $mysqli->query ("SELECT * FROM `articles` WHERE `title` = '$title'");
-        $row = $results_set->fetch_array();	  
+        $row = $results_set->fetch_array();		
 		
-		
-		print_r($row);
+		// print_r($row);
 		$t1 = $row[1];
 		$t2 = $row[2];
 		$t9 = $row[3];
@@ -194,6 +193,22 @@
 		$row = $results_set->fetch_assoc();
 		closeDB($mysqli);
 		return $row['admin'];		
+	}
+	//01.04 !here
+	function loginFree ($login) {
+		$mysqli = connectDB();
+		$results_set = $mysqli->query("SELECT `login` FROM `users` WHERE `login` ='$login' ");
+		$row = $results_set->fetch_assoc();
+		closeDB($mysqli);
+		return $row['login'];		
+	}
+
+	function getAllUsers () {
+		session_start();
+		$mysqli = connectDB();
+		$results_set = $mysqli->query('SELECT * FROM `users` ORDER BY `id` DESC  ');
+		closeDB($mysqli);
+		return $results_set;
 	}
 	// here! 23.03.
 	function getLastNews () {

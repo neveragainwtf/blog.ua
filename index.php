@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Блог!</title>
+	<title>Блог мандрівника</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
@@ -76,13 +76,13 @@
 			<!-- //banner -->
 		<!-- 23.03 -->
 		<div id="lastNews" >
-			<div class="label"><b id="sloganBlog" style="font-size:65px;">Останні розповіді:</b></div>
+			<div class="label"><b id="sloganBlog">Останні розповіді:</b></div>
 			 <?php require_once "admin/lastnews.php" ?>								
 		</div>
 		<div id="aboutAutShort">
 			<img src="images/myPic.jpg">			
 			<div id="aboutAutText" >			
-				<h2 id="sloganBlog" >Коротко про мене</h2>
+				<h2 id="sloganBlog" style=" font-size:37px;" >Коротко про мене</h2>
 				<hr>
 				<div style="font-size: 20px;">
 					<p>

@@ -6,7 +6,7 @@
 <body>
 <?php 
 echo "
-		<div>
+		<div id='marLeft'>
 				<form name= 'editrticle' method='post' action=''>
 			<div>
 				Назва : <br> <input type='text' name='title' value=".$t1." />

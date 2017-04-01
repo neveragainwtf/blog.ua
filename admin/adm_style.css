@@ -19,6 +19,46 @@ body {
 	height:100%;
 	font-family: 'Jura', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button, #admMen a, input[type=submit] {
+ 
+  background: #5DC9C9;
+  background-image: -webkit-linear-gradient(top, #5DC9C9, #3da8a8);
+  background-image: -moz-linear-gradient(top, #5DC9C9, #3da8a8);
+  background-image: -ms-linear-gradient(top, #5DC9C9, #3da8a8);
+  background-image: -o-linear-gradient(top, #5DC9C9, #3da8a8);
+  background-image: linear-gradient(to bottom, #5DC9C9, #3da8a8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  /*font-family: Arial;*/
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+input[type=submit] {
+  font-size: 15px;
+}
+
+button:hover, #admMen a:hover, input[type=submit]:hover {
+
+  background: #60dbdb;
+  background-image: -webkit-linear-gradient(top, #60dbdb, #1ddede);
+  background-image: -moz-linear-gradient(top, #60dbdb, #1ddede);
+  background-image: -ms-linear-gradient(top, #60dbdb, #1ddede);
+  background-image: -o-linear-gradient(top, #60dbdb, #1ddede);
+  background-image: linear-gradient(to bottom, #60dbdb, #1ddede);
+  text-decoration: none;
+}
+
 #wrapper {
 	min-height:100%;
 	position:relative;
@@ -85,18 +125,32 @@ li a:hover {
 }
 
 #admMen {
- /*margin: 40px 90px;*/
- display: inline-flex;
+/* margin-top: 0px;
+ display: inline-block;
+ width: 80%;*/
+ margin-left: 15px;
+
+ /*align-items: center;*/
  /*float: left;*/
 }
 
-#admMen a {
-margin: 20px;
-padding:  30px;
-color: #5DC9C9;                       
-border-radius: 50%;
-border: 2px solid #5DC9C9;
-background: white;
-/*z-index: 100;*/
-/*outline: 0!important;*/
+
+#marLeft {
+  margin-left: 20px;
+  margin-top: 50px;
 }
+
+form p, form div {
+  font-size: 21px;
+}
+
+#viewUsersTable {
+  margin-top: 50px;
+  margin-bottom: 20px;  
+  font-size: 25px;
+  width: 60%;
+  margin-left: 20%;
+ 
+}
+
+

@@ -8,7 +8,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Блог!</title>
+	<title>Блог</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="js/jquery-3.2.0.min.js" ></script>
@@ -70,7 +70,7 @@
 		<div id="topArticlesBaner" >		
 		</div>
 		<div id="articleLine">
-			<div id="sloganBlog">
+			<div id="sloganBlog" style="padding-top: 20px;">
 				<b>Мандруй зі мною :)</b>			
 			</div>
 			<?php require_once "admin/articleresult.php" ?>			
