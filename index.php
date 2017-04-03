@@ -80,7 +80,7 @@
 			 <?php require_once "admin/lastnews.php" ?>								
 		</div>
 		<div id="aboutAutShort">
-			<img src="images/myPic.jpg">			
+			<img src="images/myPicCircl.jpg">			
 			<div id="aboutAutText" >			
 				<h2 id="sloganBlog" style=" font-size:37px;" >Коротко про мене</h2>
 				<hr>

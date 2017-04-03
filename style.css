@@ -289,9 +289,6 @@ button{
 	font-family: 'Roboto', sans-serif;	
 }
 */
-/*#aboutAuthor {
-
-}*/
 
 #lastNews {
 	/*display: table;*/
@@ -462,8 +459,75 @@ button{
 	text-align: center;
 	margin: 10px 0;
 	font-size:37px;
+	z-index: 100;
 }
 
+#aboutAuthor {
+/*	background: #5DC9C9;
+	background-image: linear-gradient(to bottom, #5DC9C9, #3da8a8);
+	border-radius: 28px;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	width: 60%;
+	height: 700px;
+	margin-left: 20%;
+	box-shadow: 0 0 180px rgba(0,0,0,0.2);*/
+	
+	margin-top: 50px;
+	border: 1px solid black;
+	border-radius: 300px;
+	box-shadow: 0 0 180px rgba(0,0,0,0.2);
+	width: 90%;
+	height: 40%;
+	margin-left: 5%;
+	display: inline-block;
+}
+
+#aboutAuthor img {
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 10%;
+	width: 28%;
+	border-radius: 15%;
+	float: left;
+}
+
+#aboutAuthor p {
+	margin-left: 42%;
+	margin-right: 10%;
+	font-size: 23px;	
+}
+
+#midlImg {
+	/*width: 50%;float: left;*/
+	width: 100%;	
+}
+
+#discrImg{
+	display: block;
+}
+
+#discrImg p {
+	padding-left: 1%;
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	font-size: 23px;
+}
+
+#friends {
+	width: 100%;
+}
+
+#friends p {
+	display: inline-block;
+	width: 35%;
+	padding-left: 2%;	
+	text-align: center;
+	font-size: 23px;
+}
 
 
 
